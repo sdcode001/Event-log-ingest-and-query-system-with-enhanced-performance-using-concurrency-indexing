@@ -220,7 +220,24 @@ curl -X GET "http://localhost:3000/event/find?date=2024-03-15&latitude=40.7128&l
     "totalPages": 5
   }
 ```
-
-
-
-
+### DELETE-  /event/deleteAll
+Send a DELETE request to delete all the events from database.
+Curl bash command to send a DELETE request like this.
+```
+curl -X DELETE http://localhost:3000/event/deleteAll
+```
+##### Demo responce
+```
+{
+"acknowledged": true,
+"deletedCount": 200
+}
+```
+## Hosting
+I have hosted this service on Render.com
+<br/>
+##### Server base URL: 
+```
+https://event-log-ingest-and-query-system.onrender.com
+```
+##### Replace http://localhost:3000 with this base url to use the hosting service
