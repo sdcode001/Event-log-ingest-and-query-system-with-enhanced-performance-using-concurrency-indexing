@@ -14,11 +14,11 @@ MongoDB was opted for as our database solution due to its flexibility, scalabili
 
 ### Design Pattern And Performance Enhancement
 ##### MVC(model-view-controller) design pattern is followed for this backend system.
-<br/>
+
 ##### For optimize query performance mongoDB database indexing has been done on 'date' attribute with sorting order set to ascending as in this assignment queries are related to 'date' only. 
-<br/>
+
 ##### This '/event/find' API endpoint reuire data from given external weather and distance APIs. Hence concurrent programming has been implementesd to concurrently fetch responces from external APIs for all the events occurring within the next 14 days from the specified date. Here javascript Promises are used for concurrency with robust error handling. (see controller.js file) 
-<br/>
+
 ##### All the API endpoints has robust error/exception handling.
 
 ## Getting Started
