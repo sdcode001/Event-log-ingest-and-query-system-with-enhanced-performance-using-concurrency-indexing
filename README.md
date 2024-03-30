@@ -42,7 +42,7 @@ npm run start
 #### Now server will run on localhost:3000. Make sure your system is not running other application on port 3000
 
 ## API Endpoints
-#### POST /upload/
+### POST /upload/
 Send a POST request to http://localhost:3000/upload with a 'multipart/form-data' payload containing a field named csvFile that holds the CSV file <br/>
 Assuming you have a CSV file named data.csv, you can use curl bash command to send a POST request like this.
 ```
@@ -55,7 +55,7 @@ Replace data.csv with your CSV file name
 "result": "200 events inserted into database...."
 }
 ```
-#### GET /event/find?date=<YYYY-MM-DD>&latitude=<value>&longitude=<value>
+### GET /event/find?date=YYYY-MM-DD&latitude=value&longitude=value
 Send a GET request to fetch events data sorted by the earliest event after the specified date, with a page size of 10. Each event includes event name, city, date, weather, and the distance from the user's location <br/>
 Curl bash command to send a GET request like this.
 ```
