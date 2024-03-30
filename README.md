@@ -55,7 +55,7 @@ Replace data.csv with your CSV file name
 "result": "200 events inserted into database...."
 }
 ```
-### GET-  /event/find?date=YYYY-MM-DD&latitude=value&longitude=<value>
+### GET-  #### /event/find?date=YYYY-MM-DD&latitude=value&longitude=value
 Send a GET request to fetch events data sorted by the earliest event after the specified date, with a page size of 10. Each event includes event name, city, date, weather, and the distance from the user's location <br/>
 Curl bash command to send a GET request like this.
 ```
